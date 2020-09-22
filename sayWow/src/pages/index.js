@@ -1,14 +1,17 @@
 import React from "react"
-import { Link } from "gatsby"
-import Header from "../components/header"
+// import styled from "styled-components"
+import Header from "/Users/mac/Desktop/say_wow/say_wow/sayWow/src/Components/Header.js"
+// import PayPal from "/Users/mac/Desktop/say_wow/say_wow/sayWow/src/Components/PayPal.js"
+require("/Users/mac/Desktop/say_wow/say_wow/sayWow/src/styles/main.css")
+import Content from "/Users/mac/Desktop/say_wow/say_wow/sayWow/src/Components/Content.js"
+import Footer from "/Users/mac/Desktop/say_wow/say_wow/sayWow/src/Components/Footer.js"
 
-export default function Home() {
+export default function SayWow() {
   return (
-    <div style={{ color: `purple` }}>
-      <Link to="/contact/">Contact</Link>
-      <Header headerText="Hello Gatsby!" />
-      <p>What a world.</p>
-      <img src="https://source.unsplash.com/random/400x200" alt="" />
-    </div>
+    <>
+      <Header></Header>
+      <Content></Content>
+      <Footer></Footer>
+    </>
   )
 }
